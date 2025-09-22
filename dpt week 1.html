@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1: Introduction & Atomic Structure - Detailed Notes</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .slide {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .slide-number {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .key-point {
+            background-color: #e8f4fc;
+            border-left: 4px solid #3498db;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .example {
+            background-color: #f0f9eb;
+            border-left: 4px solid #67c23a;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .clinical-application {
+            background-color: #fdf2e9;
+            border-left: 4px solid #e6a23c;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .figure {
+            text-align: center;
+            margin: 25px 0;
+            font-style: italic;
+            color: #666;
+        }
+        .figure-placeholder {
+            width: 90%;
+            height: 250px;
+            background-color: #eee;
+            margin: 20px auto;
+            border: 1px dashed #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            border-radius: 4px;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .safety-note {
+            background-color: #fff8e6;
+            border-left: 4px solid #e6a23c;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .lab-equipment {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .equipment-item {
+            flex: 1 1 250px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .equipment-item img {
+            max-width: 100%;
+            height: 120px;
+            object-fit: contain;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .comparison-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .step-by-step {
+            counter-reset: step-counter;
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .step-by-step li {
+            counter-increment: step-counter;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 40px;
+        }
+        .step-by-step li:before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .note-box {
+            background-color: #f0f7ff;
+            border: 1px solid #b3d9ff;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .note-box-title {
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Week 1: Introduction & Atomic Structure - Comprehensive Notes</h1>
+    
+    <!-- Slide 1: Course Overview -->
+    <div class="slide">
+        <div class="slide-number">1</div>
+        <h2>Course Overview</h2>
+        <p>Welcome to Medical Physics for DPT students! This 16-week course is designed to provide you with fundamental physics concepts essential for understanding and safely using therapeutic modalities in physiotherapy practice.</p>
+        
+        <h3>Course Structure</h3>
+        <p>The course is divided into three main components:</p>
+        <ul>
+            <li><strong>Theory Classes (2 hours/week):</strong> Foundational physics concepts and their applications in physiotherapy</li>
+            <li><strong>Practical Classes (1 hour/week):</strong> Hands-on experience with equipment and techniques</li>
+            <li><strong>Assessments:</strong> Continuous evaluation, mid-term exam, and final exam</li>
+        </ul>
+        
+        <div class="key-point">
+            <strong>Course Objectives:</strong>
+            <ul>
+                <li>Understand basic physics principles relevant to physiotherapy</li>
+                <li>Apply physics concepts to therapeutic modalities</li>
+                <li>Safely operate and maintain physiotherapy equipment</li>
+                <li>Comprehend the underlying mechanisms of various treatment modalities</li>
+                <li>Implement safety protocols for electrical and radiation equipment</li>
+            </ul>
+        </div>
+        
+        <div class="clinical-application">
+            <strong>Clinical Relevance:</strong> Physics principles form the foundation of many therapeutic modalities used in physiotherapy. Understanding these principles helps practitioners make informed decisions about treatment parameters, equipment selection, and safety considerations.
+        </div>
+    </div>
+    
+    <!-- Slide 2: Importance of Physics in Physiotherapy -->
+    <div class="slide">
+        <div class="slide-number">2</div>
+        <h2>Importance of Physics in Physiotherapy</h2>
+        <p>Physics is the science that deals with matter, energy, and their interactions. In physiotherapy, physics principles are applied through various therapeutic modalities to achieve clinical outcomes.</p>
+        
+        <h3>Key Areas of Application</h3>
+        <table class="comparison-table">
+            <tr>
+                <th>Physics Principle</th>
+                <th>Therapeutic Modality</th>
+                <th>Clinical Application</th>
+            </tr>
+            <tr>
+                <td>Electrical Current</td>
+                <td>Electrical Stimulation</td>
+                <td>Pain management, muscle re-education</td>
+            </tr>
+            <tr>
+                <td>Sound Waves</td>
+                <li>Therapeutic Ultrasound</td>
+                <td>Tissue healing, deep heating</td>
+            </tr>
+            <tr>
+                <td>Electromagnetic Radiation</td>
+                <td>Shortwave Diathermy</td>
+                <td>Deep tissue heating</td>
+            </tr>
+            <tr>
+                <td>Heat Transfer</td>
+                <li>Thermotherapy</td>
+                <li>Pain relief, tissue extensibility</li>
+            </tr>
+            <tr>
+                <td>Mechanical Forces</td>
+                <li>Traction, Compression</td>
+                <li>Spinal decompression, edema reduction</li>
+            </tr>
+        </table>
+        
+        <div class="example">
+            <strong>Example: Electrical Stimulation</strong><br>
+            When using electrical stimulation for pain management, understanding the physics of electrical currents helps therapists:
+            <ul>
+                <li>Select appropriate parameters (frequency, intensity, duration)</li>
+                <li>Choose the right waveform (monophasic, biphasic, etc.)</li>
+                <li>Position electrodes correctly for optimal current flow</li>
+                <li>Avoid tissue damage by staying within safe limits</li>
+                <li>Explain the treatment mechanism to patients</li>
+            </ul>
+        </div>
+        
+        <div class="key-point">
+            <strong>Why DPT Students Need Physics:</strong>
+            <ul>
+                <li>To understand how therapeutic modalities work</li>
+                <li>To apply treatments safely and effectively</li>
+                <li>To troubleshoot equipment issues</li>
+                <li>To adapt treatments for individual patients</li>
+                <li>To communicate effectively with other healthcare professionals</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Slide 3: Basic Structure of Atom -->
+    <div class="slide">
+        <div class="slide-number">3</div>
+        <h2>Basic Structure of Atom</h2>
+        <p>All matter in the universe is composed of atoms, which are the basic building blocks of elements. Understanding atomic structure is fundamental to grasping electrical phenomena in physiotherapy.</p>
+        
+        <h3>Historical Development</h3>
+        <p>The concept of the atom has evolved over time:</p>
+        <ul>
+            <li><strong>Dalton's Model (1808):</strong> Atoms are indivisible, solid spheres</li>
+            <li><strong>Thomson's Model (1897):</strong> "Plum pudding" model with electrons embedded in positive charge</li>
+            <li><strong>Rutherford's Model (1911):</strong> Nuclear model with electrons orbiting a dense nucleus</li>
+            <li><strong>Bohr's Model (1913):</strong> Electrons orbit in specific energy levels</li>
+            <li><strong>Modern Quantum Model:</strong> Electrons exist in probability clouds (orbitals)</li>
+        </ul>
+        
+        <h3>Subatomic Particles</h3>
+        <p>An atom consists of three main subatomic particles:</p>
+        <table class="comparison-table">
+            <tr>
+                <th>Particle</th>
+                <th>Charge</th>
+                <th>Mass (approx.)</th>
+                <th>Location</th>
+                <th>Role in Electricity</th>
+            </tr>
+            <tr>
+                <td>Proton</td>
+                <td>+1</td>
+                <td>1 atomic mass unit</td>
+                <td>Nucleus</td>
+                <td>Determines element identity</td>
+            </tr>
+            <tr>
+                <td>Neutron</td>
+                <td>0</td>
+                <td>1 atomic mass unit</td>
+                <td>Nucleus</td>
+                <td>Stabilizes nucleus</td>
+            </tr>
+            <tr>
+                <td>Electron</td>
+                <td>-1</td>
+                <td>1/1836 atomic mass unit</td>
+                <td>Orbiting nucleus</td>
+                <td>Responsible for electrical current</td>
+            </tr>
+        </table>
+        
+        <div class="figure">
+            <img src="fig1.png" alt="Simplified atomic structure showing protons, neutrons in the nucleus, and electrons in orbit" style="max-width: 100%; height: auto;">
+            <p>Figure: Simplified atomic structure showing protons, neutrons in the nucleus, and electrons in orbit</p>
+        </div>
+        
+        <div class="key-point">
+            <strong>Key Concept:</strong> In a neutral atom, the number of protons equals the number of electrons. The number of protons determines the element's identity (atomic number), while the sum of protons and neutrons gives the atomic mass.
+        </div>
+    </div>
+    
+    <!-- Slide 4: Electron Shells and Valence Electrons -->
+    <div class="slide">
+        <div class="slide-number">4</div>
+        <h2>Electron Shells and Valence Electrons</h2>
+        <p>Electrons are arranged in specific energy levels around the nucleus called shells or orbitals. This arrangement determines an atom's chemical properties and electrical behavior.</p>
+        
+        <h3>Electron Shell Structure</h3>
+        <p>Electron shells are labeled K, L, M, N, etc., with K being closest to the nucleus. Each shell can hold a maximum number of electrons:</p>
+        <ul>
+            <li>K shell (n=1): Maximum 2 electrons</li>
+            <li>L shell (n=2): Maximum 8 electrons</li>
+            <li>M shell (n=3): Maximum 18 electrons</li>
+            <li>N shell (n=4): Maximum 32 electrons</li>
+        </ul>
+        
+        <div class="figure">
+            <img src="fig2.png" alt="Electron shells in an atom with capacity of each shell" style="max-width: 100%; height: auto;">
+            <p>Figure: Electron shells in an atom with capacity of each shell</p>
+        </div>
+        
+        <h3>Valence Electrons</h3>
+        <p>Valence electrons are the electrons in the outermost shell of an atom. They are particularly important because:</p>
+        <ul>
+            <li>They determine the atom's chemical properties</li>
+            <li>They are involved in chemical bonding</li>
+            <li>They influence electrical conductivity</li>
+            <li>Atoms tend to seek stable configurations (full outer shells)</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Example: Sodium (Na) and Chlorine (Cl)</strong><br>
+            Sodium (atomic number 11) has electron configuration: 2-8-1 (1 valence electron)<br>
+            Chlorine (atomic number 17) has electron configuration: 2-8-7 (7 valence electrons)<br>
+            Sodium donates its valence electron to chlorine, forming NaCl (table salt), where both have stable configurations.
+        </div>
+        
+        <h3>Electron Behavior in Electricity</h3>
+        <p>In electrical conduction, valence electrons play a crucial role:</p>
+        <ul>
+            <li><strong>Conductors:</strong> Have few valence electrons (1-3) that can move freely</li>
+            <li><strong>Insulators:</strong> Have many valence electrons (5-8) that are tightly bound</li>
+            <li><strong>Semiconductors:</strong> Have 4 valence electrons and intermediate properties</li>
+        </ul>
+        
+        <div class="clinical-application">
+            <strong>Clinical Relevance:</strong> Understanding valence electrons helps explain why certain materials are used in therapeutic equipment. For example, electrodes in electrical stimulation are made of conductive metals with free valence electrons, while equipment casings are made of insulating plastics with tightly bound electrons.
+        </div>
+    </div>
+    
+    <!-- Slide 5: Electron Movement and Conduction -->
+    <div class="slide">
+        <div class="slide-number">5</div>
+        <h2>Electron Movement and Conduction</h2>
+        <p>Electron movement is the fundamental basis of electrical current, which powers many therapeutic modalities in physiotherapy.</p>
+        
+        <h3>Electron Behavior</h3>
+        <p>Electrons are not stationary particles but exist in regions of space called orbitals. Their behavior is governed by quantum mechanics:</p>
+        <ul>
+            <li>Electrons can exist in discrete energy levels</li>
+            <li>They can move between energy levels by absorbing or emitting energy</li>
+            <li>In conductors, valence electrons can move freely throughout the material</li>
+            <li>This movement of charge constitutes electric current</li>
+        </ul>
+        
+        <div class="figure">
+            <img src="fig3.png" alt="Electron movement between energy levels and through a conductor" style="max-width: 100%; height: auto;">
+            <p>Figure: Electron movement between energy levels and through a conductor</p>
+        </div>
+        
+        <h3>Electric Current</h3>
+        <p>Electric current is the rate of flow of electric charge. In metals, it's primarily the flow of electrons:</p>
+        <ul>
+            <li><strong>Conventional Current:</strong> Flow of positive charge (historical convention)</li>
+            <li><strong>Electron Flow:</strong> Actual movement of electrons (opposite to conventional current)</li>
+        </ul>
+        
+        <div class="key-point">
+            <strong>Key Concept:</strong> In physiotherapy equipment, we typically refer to conventional current, but understanding electron flow helps explain the underlying physics of therapeutic modalities.
+        </div>
+        
+        <h3>Factors Affecting Electron Flow</h3>
+        <p>Several factors influence how easily electrons flow through a material:</p>
+        <ul>
+            <li><strong>Material Type:</strong> Conductors allow easy flow, insulators resist it</li>
+            <li><strong>Temperature:</strong> Higher temperature increases resistance in metals</li>
+            <li><strong>Material Purity:</strong> Impurities disrupt electron flow</li>
+            <li><strong>Material Structure:</strong> Crystal structure affects electron mobility</li>
+            <li><strong>Applied Voltage:</strong> Higher voltage increases electron flow rate</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Example: Copper vs. Rubber</strong><br>
+            Copper has one valence electron per atom that can move freely, making it an excellent conductor used in electrical wiring. Rubber has tightly bound electrons and is used as insulation to prevent electric shock.
+        </div>
+    </div>
+    
+    <!-- Slide 6: Conductors vs. Insulators -->
+    <div class="slide">
+        <div class="slide-number">6</div>
+        <h2>Conductors vs. Insulators</h2>
+        <p>Materials can be classified based on their ability to conduct electricity. This classification is essential for designing safe and effective therapeutic equipment.</p>
+        
+        <h3>Conductors</h3>
+        <p>Conductors are materials that allow electrons to flow freely. They have:</p>
+        <ul>
+            <li>Many free electrons in their outer shells (typically 1-3 valence electrons)</li>
+            <li>Low resistance to electrical flow</li>
+            <li>High electrical conductivity</li>
+            <li>Examples: Metals like copper, silver, gold, aluminum</li>
+        </ul>
+        
+        <h3>Insulators</h3>
+        <p>Insulators are materials that resist the flow of electrons. They have:</p>
+        <ul>
+            <li>Electrons tightly bound to their atoms (typically 5-8 valence electrons)</li>
+            <li>High resistance to electrical flow</li>
+            <li>Low electrical conductivity</li>
+            <li>Examples: Rubber, plastic, glass, ceramic, wood</li>
+        </ul>
+        
+        <div class="figure">
+            <img src="fig4.png" alt="Comparison of electron behavior in conductors and insulators" style="max-width: 100%; height: auto;">
+            <p>Figure: Comparison of electron behavior in conductors and insulators</p>
+        </div>
+        
+        <h3>Semiconductors</h3>
+        <p>Semiconductors have properties between conductors and insulators:</p>
+        <ul>
+            <li>Typically have 4 valence electrons</li>
+            <li>Conductivity can be controlled by doping, temperature, or light</li>
+            <li>Examples: Silicon, germanium, gallium arsenide</li>
+            <li>Used in electronic components of therapeutic equipment</li>
+        </ul>
+        
+        <div class="clinical-application">
+            <strong>Application in Physiotherapy Equipment:</strong>
+            <ul>
+                <li><strong>Electrodes:</strong> Made of conductive materials (silver, carbon) to allow current flow to tissues</li>
+                <li><strong>Equipment Casings:</strong> Made of insulating materials (plastic) to protect users</li>
+                <li><strong>Circuit Boards:</strong> Use conductive traces (copper) and insulating substrates</li>
+                <li><strong>Electronic Components:</strong> Use semiconductors for controlling current flow</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Slide 7: Conduction in Solids -->
+    <div class="slide">
+        <div class="slide-number">7</div>
+        <h2>Conduction in Solids</h2>
+        <p>In solid conductors, particularly metals, the arrangement of atoms and behavior of electrons determine their electrical properties.</p>
+        
+        <h3>Metallic Bonding</h3>
+        <p>In metals, atoms are arranged in a closely packed lattice structure. The outermost electrons of these atoms are not bound to specific atoms but form a "sea" of delocalized electrons that can move freely throughout the material. This is known as metallic bonding.</p>
+        
+        <div class="figure">
+            <img src="fig5.png" alt="Electron sea model in metallic conductors showing positive ions in a sea of electrons" style="max-width: 100%; height: auto;">
+            <p>Figure: Electron sea model in metallic conductors showing positive ions in a sea of electrons</p>
+        </div>
+        
+        <h3>Electron Mobility</h3>
+        <p>Electron mobility is a measure of how quickly electrons can move through a material when an electric field is applied. It depends on:</p>
+        <ul>
+            <li><strong>Material Type:</strong> Different metals have different electron mobilities</li>
+            <li><strong>Temperature:</strong> Higher temperature increases atomic vibrations, reducing mobility</li>
+            <li><strong>Impurities:</strong> Defects in the crystal structure scatter electrons</li>
+            <li><strong>Crystal Structure:</strong> More ordered structures have higher mobility</li>
+        </ul>
+        
+        <h3>Resistance and Resistivity</h3>
+        <p>Resistance is the opposition to current flow in a material. It depends on:</p>
+        <ul>
+            <li><strong>Material Type:</strong> Each material has a characteristic resistivity</li>
+            <li><strong>Length:</strong> Longer conductors have higher resistance</li>
+            <li><strong>Cross-sectional Area:</strong> Thicker conductors have lower resistance</li>
+            <li><strong>Temperature:</strong> Resistance generally increases with temperature in metals</li>
+        </ul>
+        
+        <div class="key-point">
+            <strong>Ohm's Law:</strong> V = I × R<br>
+            Where V is voltage (volts), I is current (amperes), and R is resistance (ohms). This fundamental relationship governs the behavior of electrical circuits in therapeutic equipment.
+        </div>
+        
+        <div class="example">
+            <strong>Example: Copper vs. Aluminum Wiring</strong><br>
+            Copper has lower resistivity than aluminum, meaning it conducts electricity better. However, aluminum is lighter and cheaper. In therapeutic equipment, copper is often used for critical components where low resistance is essential, while aluminum may be used for less critical parts to reduce weight and cost.
+        </div>
+    </div>
+    
+    <!-- Slide 8: Convection in Liquids and Gases -->
+    <div class="slide">
+        <div class="slide-number">8</div>
+        <h2>Convection in Liquids and Gases</h2>
+        <p>While conduction refers to the movement of electrons, convection involves the movement of particles (atoms or molecules) in fluids (liquids and gases). In convection, heat is transferred through the bulk movement of the fluid itself.</p>
+        
+        <h3>Types of Convection</h3>
+        <ul>
+            <li><strong>Natural Convection:</strong> Caused by density differences due to temperature variations. Hotter fluid becomes less dense and rises, while cooler fluid sinks.</li>
+            <li><strong>Forced Convection:</strong> Caused by external forces like pumps, fans, or stirring devices.</li>
+        </ul>
+        
+        <div class="figure">
+            <img src="fig6.png" alt="Natural convection showing hot fluid rising and cold fluid sinking" style="max-width: 100%; height: auto;">
+            <p>Figure: Natural convection showing hot fluid rising and cold fluid sinking</p>
+        </div>
+        
+        <h3>Convection in Physiotherapy</h3>
+        <p>Convection plays a crucial role in several physiotherapy modalities:</p>
+        
+        <h4>Hydrotherapy</h4>
+        <p>In hydrotherapy, water is used for therapeutic purposes. Convection currents in water help distribute heat evenly:</p>
+            <ul>
+                <li>Warm water rises, creating natural convection currents</li>
+                <li>Agitation (whirlpool) creates forced convection</li>
+                <li>Convection enhances heat transfer to the patient's body</li>
+                <li>Provides uniform temperature distribution in the therapeutic pool</li>
+            </ul>
+        
+        <h4>Thermal Modalities</h4>
+        <p>Convection is involved in various thermal treatments:</p>
+            <ul>
+                <li><li>Hot packs:</li> Heat transfer through convection of air and moisture</li>
+                <li><li>Cold packs:</li> Similar principles for cooling</li>
+                <li><li>Fluidotherapy:</li> Uses forced convection of heated air particles</li>
+            </ul>
+        
+        <div class="clinical-application">
+            <strong>Clinical Application: Whirlpool Therapy</strong><br>
+            In whirlpool therapy, the agitation of water creates forced convection currents that:
+            <ul>
+                <li>Distribute heat evenly throughout the water</li>
+                <li>Provide gentle massage through water movement</li>
+                <li>Enhance circulation in the immersed body part</li>
+                <li>Help remove debris from wounds</li>
+                <li>Provide sensory stimulation</li>
+            </ul>
+        </div>
+        
+        <div class="example">
+            <strong>Example: Contrast Baths</strong><br>
+            Contrast baths involve alternating immersion in hot and cold water. Convection currents in both baths help maintain consistent temperatures and enhance the thermal effect on the patient's tissues. The temperature difference creates stronger convection currents, improving the therapeutic effect.
+        </div>
+    </div>
+    
+    <!-- Slide 9: Real-life PT Applications -->
+    <div class="slide">
+        <div class="slide-number">9</div>
+        <h2>Real-life PT Applications</h2>
+        <p>Understanding electron movement, conduction, and convection is essential for various physiotherapy applications. Let's explore some real-world examples.</p>
+        
+        <h3>Electrical Stimulation Modalities</h3>
+        <p>Electrical stimulation uses electrical currents to produce physiological effects:</p>
+        
+        <h4>Transcutaneous Electrical Nerve Stimulation (TENS)</h4>
+        <ul>
+            <li>Uses low-voltage electrical currents to stimulate nerves</li>
+            <li>Conductive electrodes deliver current to the skin</li>
+            <li>Electron flow creates electrical impulses that block pain signals</li>
+            <li>Understanding current parameters (frequency, intensity) is crucial for effectiveness</li>
+        </ul>
+        
+        <h4>Electrical Muscle Stimulation (EMS)</h4>
+        <ul>
+            <li>Uses electrical currents to cause muscle contractions</li>
+            <li>Conductive electrodes placed over motor points</li>
+            <li>Electron flow depolarizes muscle membranes, causing contractions</li>
+            <li>Used for muscle re-education and strengthening</li>
+        </ul>
+        
+        <div class="figure">
+            <img src="fig7.png" alt="TENS unit with electrode placement on patient's back" style="max-width: 100%; height: auto;">
+            <p>Figure: TENS unit with electrode placement on patient's back</p>
+        </div>
+        
+        <h3>Therapeutic Ultrasound</h3>
+        <p>Therapeutic ultrasound uses high-frequency sound waves for tissue healing:</p>
+        <ul>
+            <li>Converts electrical energy to mechanical energy (sound waves)</li>
+            <li>Understanding electrical conduction in the transducer is essential</li>
+            <li>Sound waves cause vibration at the molecular level</li>
+            <li>Produces thermal and non-thermal effects in tissues</li>
+        </ul>
+        
+        <h3>Shortwave Diathermy</h3>
+        <p>Shortwave diathermy uses electromagnetic radiation for deep heating:</p>
+        <ul>
+            <li>Generates electromagnetic fields in the radiofrequency range</li>
+            <li>Understanding electromagnetic principles is crucial</li>
+            <li>Produces deep heating in tissues with high water content</li>
+            <li>Used for pain relief and tissue healing</li>
+        </ul>
+        
+        <div class="clinical-application">
+            <strong>Clinical Decision Making:</strong><br>
+            Understanding the physics behind these modalities helps physiotherapists:
+            <ul>
+                <li>Select appropriate modalities for specific conditions</li>
+                <li>Set correct treatment parameters</li>
+                <li>Position electrodes or applicators effectively</li>
+                <li>Ensure patient safety</li>
+                <li>Explain treatments to patients</li>
+                <li>Troubleshoot equipment issues</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Slide 10: Lab Safety Protocols -->
+    <div class="slide">
+        <div class="slide-number">10</div>
+        <h2>Lab Safety Protocols</h2>
+        <p>Safety is paramount when working with electrical equipment in a laboratory setting. Following proper safety protocols prevents accidents and ensures a safe learning environment.</p>
+        
+        <h3>General Laboratory Safety</h3>
+        <div class="safety-note">
+            <strong>Before Starting Lab Work:</strong>
+            <ul>
+                <li>Attend all safety briefings and demonstrations</li>
+                <li>Read and understand all lab instructions</li>
+                <li>Identify the location of safety equipment (fire extinguisher, first aid kit, emergency shower)</li>
+                <li>Know emergency procedures and exit routes</li>
+                <li>Remove loose clothing, jewelry, and tie back long hair</li>
+                <li>Wear appropriate personal protective equipment (PPE)</li>
+            </ul>
+        </div>
+        
+        <h3>Electrical Safety Rules</h3>
+        <div class="safety-note">
+            <strong>When Working with Electrical Equipment:</strong>
+            <ul>
+                <li>Always inspect equipment for damage before use</li>
+                <li>Never use equipment with frayed cords, exposed wires, or damaged plugs</li>
+                <li>Keep water and other liquids away from electrical equipment</li>
+                <li>Use only one hand when working with live circuits when possible</li>
+                <li>Turn off power and unplug equipment before making changes</li>
+                <li>Use insulated tools and equipment</li>
+                <li>Ensure proper grounding of all equipment</li>
+                <li>Never override safety features or interlocks</li>
+                <li>Report any electrical shocks immediately, even minor ones</li>
+            </ul>
+        </div>
+        
+        <h3>Personal Protective Equipment (PPE)</h3>
+        <p>Appropriate PPE must be worn at all times during lab sessions:</p>
+        <ul>
+            <li><strong>Safety Glasses:</strong> Protect eyes from chemical splashes and flying debris</li>
+            <li><strong>Lab Coat:</strong> Protects skin and clothing from spills</li>
+            <li><strong>Closed-toe Shoes:</strong> Protect feet from falling objects and spills</li>
+            <li><strong>Insulated Gloves:</strong> When working with electrical equipment</li>
+        </ul>
+        
+        <div class="key-point">
+            <strong>Remember:</strong> No experiment or demonstration is so important that it should be pursued at the risk of safety. Always prioritize safety over completing lab activities.
+        </div>
+    </div>
+    
+    <!-- Slide 11: Introduction to Lab Equipment -->
+    <div class="slide">
+        <div class="slide-number">11</div>
+        <h2>Introduction to Lab Equipment</h2>
+        <p>In this practical session, you will become familiar with basic equipment used in medical physics experiments. Understanding how to use this equipment properly is essential for conducting experiments safely and accurately.</p>
+        
+        <h3>Essential Lab Equipment</h3>
+        <div class="lab-equipment">
+            <div class="equipment-item">
+                <img src="fig8.jpeg" alt="Digital Multimeter" style="max-width: 100%; height: auto;">
+                <h4>Digital Multimeter</h4>
+                <p>Measures voltage, current, and resistance. Essential for all electrical experiments.</p>
+            </div>
+            <div class="equipment-item">
+                <img src="fig9.jpeg" alt="DC Power Supply" style="max-width: 100%; height: auto;">
+                <h4>DC Power Supply</h4>
+                <p>Provides controlled electrical energy for experiments. Adjustable voltage and current.</p>
+            </div>
+            <div class="equipment-item">
+                <img src="fig10.jpeg" alt="Breadboard" style="max-width: 100%; height: auto;">
+                <h4>Breadboard</h4>
+                <p>For building test circuits without soldering. Allows easy component changes.</p>
+            </div>
+            <div class="equipment-item">
+                <img src="fig11.jpeg" alt="Electronic Components - Resistors and Capacitors" style="max-width: 100%; height: auto;">
+                <h4>Electronic Components</h4>
+                <p>Resistors, capacitors, diodes, and wires for building circuits.</p>
+            </div>
+        </div>
+        
+        <h3>Equipment Handling Guidelines</h3>
+        <ul>
+            <li><strong>Inspect Before Use:</strong> Check for damage, frayed cords, or loose connections</li>
+            <li><strong>Use Correct Settings:</strong> Ensure multimeters and power supplies are set to appropriate ranges</li>
+            <li><strong>Handle with Care:</strong> Electronic equipment is sensitive to shock and vibration</li>
+            <li><strong>Store Properly:</strong> Keep equipment in designated areas when not in use</li>
+            <li><strong>Report Issues:</strong> Notify instructor of any malfunctioning equipment</li>
+        </ul>
+        
+        <h3>Basic Equipment Functions</h3>
+        <h4>Digital Multimeter</h4>
+        <ul>
+            <li><strong>Voltage Measurement:</strong> Connected in parallel with the circuit</li>
+            <li><strong>Current Measurement:</strong> Connected in series with the circuit</li>
+            <li><strong>Resistance Measurement:</strong> Component must be disconnected from circuit</li>
+            <li><strong>Continuity Test:</strong> Checks for complete electrical path</li>
+        </ul>
+        
+        <h4>DC Power Supply</h4>
+        <ul>
+            <li><strong>Voltage Control:</strong> Adjusts output voltage (typically 0-30V)</li>
+            <li><strong>Current Limit:</strong> Protects circuits from excessive current</li>
+            <li><strong>Output Terminals:</strong> Positive (red) and negative (black) connections</li>
+            <li><strong>Display:</strong> Shows voltage and current readings</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Example: Setting Up a Simple Circuit</strong><br>
+            To set up a simple circuit with a resistor and LED:
+            <ol>
+                <li>Connect power supply positive to breadboard</li>
+                <li>Insert resistor in breadboard</li>
+                <li>Connect LED in series with resistor (observe polarity)</li>
+                <li>Connect LED negative to power supply negative</li>
+                <li>Set power supply to appropriate voltage</li>
+                <li>Measure voltage across components with multimeter</li>
+            </ol>
+        </div>
+    </div>
+    
+    <!-- Slide 12: Basic Electrical Safety -->
+    <div class="slide">
+        <div class="slide-number">12</div>
+        <h2>Basic Electrical Safety</h2>
+        <p>Understanding and implementing electrical safety is crucial when working with therapeutic equipment in both laboratory and clinical settings.</p>
+        
+        <h3>Understanding Electrical Hazards</h3>
+        <p>Electricity can cause several types of injuries:</p>
+        <ul>
+            <li><strong>Electric Shock:</strong> Current passing through the body can disrupt normal electrical activity</li>
+            <li><strong>Burns:</strong> Electrical current can cause thermal burns at entry and exit points</li>
+            <li><strong>Falls:</strong> Electric shock can cause loss of muscle control leading to falls</li>
+            <li><strong>Secondary Injuries:</strong> From equipment malfunction or improper use</li>
+        </ul>
+        
+        <h3>Factors Affecting Shock Severity</h3>
+        <p>The severity of electric shock depends on:</p>
+        <ul>
+            <li><strong>Current Amount:</strong> Higher current is more dangerous</li>
+            <li><strong>Current Path:</strong> Through vital organs is most dangerous</li>
+            <li><strong>Current Duration:</strong> Longer exposure increases damage</li>
+            <li><strong>Current Type:</strong> AC is generally more dangerous than DC at the same voltage</li>
+            <li><strong>Body Resistance:</strong> Varies with skin condition and contact area</li>
+        </ul>
+        
+        <div class="safety-note">
+            <strong>Current Effects on the Body:</strong>
+            <ul>
+                <li>1 mA: Threshold of sensation</li>
+                <li>5-10 mA: Painful shock, muscle contraction</li>
+                <li>10-20 mA: "Can't let go" threshold</li>
+                <li>50-100 mA: Ventricular fibrillation, possible death</li>
+                <li>>100 mA: Severe burns, cardiac arrest</li>
+            </ul>
+        </div>
+        
+        <h3>Safety Precautions</h3>
+        <h4>Personal Safety</h4>
+        <ul>
+            <li>Keep hands dry when working with electrical equipment</li>
+            <li>Use insulated tools and equipment</li>
+            <li>Wear rubber-soled shoes</li>
+            <li>Remove metal jewelry</li>
+            <li>Use one hand when possible to avoid current across chest</li>
+        </ul>
+        
+        <h4>Equipment Safety</h4>
+        <ul>
+            <li>Ensure proper grounding of all equipment</li>
+            <li>Use Ground Fault Circuit Interrupters (GFCIs) where required</li>
+            <li>Regularly inspect cords and plugs for damage</li>
+            <li>Never override safety features</li>
+            <li>Use appropriate fuses and circuit breakers</li>
+        </ul>
+        
+        <div class="clinical-application">
+            <strong>Clinical Application:</strong><br>
+            In physiotherapy practice, electrical safety is paramount when using:
+            <ul>
+                <li>Electrical stimulation devices</li>
+                <li>Ultrasound equipment</li>
+                <li>Shortwave diathermy units</li>
+                <li>TENS and EMS machines</li>
+            </ul>
+            Always follow manufacturer guidelines and institutional safety protocols.
+        </div>
+    </div>
+    
+    <!-- Slide 13: Handling of Measuring Instruments -->
+    <div class="slide">
+        <div class="slide-number">13</div>
+        <h2>Handling of Measuring Instruments</h2>
+        <p>Measuring instruments are delicate and require careful handling to ensure accurate measurements and prevent damage. Proper use and maintenance of these instruments are essential skills in medical physics.</p>
+        
+        <h3>Types of Measuring Instruments</h3>
+        <ul>
+            <li><strong>Digital Multimeters:</strong> Measure voltage, current, resistance, continuity</li>
+            <li><strong>Oscilloscopes:</strong> Display waveform shapes and measure signal properties</li>
+            <li><strong>Function Generators:</strong> Produce electrical waveforms for testing</li>
+            <li><strong>LCR Meters:</strong> Measure inductance, capacitance, and resistance</li>
+            <li><strong>Power Meters:</strong> Measure electrical power consumption</li>
+        </ul>
+        
+        <h3>Proper Handling Techniques</h3>
+        <h4>Before Use</h4>
+        <ul>
+            <li>Inspect for physical damage (cracks, loose parts)</li>
+            <li>Check calibration status and date</li>
+            <li>Verify battery level or power connection</li>
+            <li>Ensure probes and leads are in good condition</li>
+            <li>Select appropriate measurement range</li>
+        </ul>
+        
+        <h4>During Use</h4>
+        <ul>
+            <li>Hold probes by the insulated handles only</li>
+            <li>Make firm contact with measurement points</li>
+            <li>Avoid touching metal parts of probes</li>
+            <li>Read measurements at eye level for accuracy</li>
+            <li>Do not exceed instrument ratings</li>
+        </ul>
+        
+        <h4>After Use</h4>
+        <ul>
+            <li>Turn off power and disconnect probes</li>
+            <li>Set to highest range or off position</li>
+            <li>Store in protective case or designated area</li>
+            <li>Report any issues or inaccuracies</li>
+            <li>Return to proper storage location</li>
+        </ul>
+        
+        <div class="figure">
+            <img src="fig12.jpg" alt="Proper technique for holding multimeter probes" style="max-width: 100%; height: auto;">
+            <p>Figure: Proper technique for holding multimeter probes</p>
+        </div>
+        
+        <h3>Common Errors and Precautions</h3>
+        <div class="key-point">
+            <strong>Common Measurement Errors:</strong>
+            <ul>
+                <li><strong>Wrong Range Selection:</strong> Can damage instrument or give inaccurate readings</li>
+                <li><strong>Improper Connection:</strong> Series vs parallel connection errors</li>
+                <li><strong>Environmental Factors:</strong> Temperature, humidity, electromagnetic interference</li>
+                <li><strong>Lead Resistance:</strong> Can affect low-resistance measurements</li>
+                <li><strong>Loading Effect:</strong> Instrument affects the circuit being measured</li>
+            </ul>
+        </div>
+        
+        <h3>Maintenance and Care</h3>
+        <ul>
+            <li>Regular calibration according to manufacturer schedule</li>
+            <li>Keep clean and dry, avoid moisture and dust</li>
+            <li>Store in temperature-controlled environment</li>
+            <li>Use protective cases when transporting</li>
+            <li>Follow manufacturer's maintenance guidelines</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Example: Measuring Voltage</strong><br>
+            To measure voltage across a component:
+            <ol>
+                <li>Set multimeter to voltage mode (V)</li>
+                <li>Select appropriate range (start high, reduce if needed)</li>
+                <li>Connect black probe to ground/negative reference</li>
+                <li>Connect red probe to point to measure</li>
+                <li>Read voltage display</li>
+                <li>Disconnect probes before changing circuit</li>
+            </ol>
+        </div>
+    </div>
+    
+    <!-- Slide 14: Demonstration of Conductors vs. Insulators -->
+    <div class="slide">
+        <div class="slide-number">14</div>
+        <h2>Demonstration of Conductors vs. Insulators</h2>
+        <p>In this practical demonstration, you will test various materials for electrical conductivity and understand why certain materials are used in specific parts of therapeutic equipment.</p>
+        
+        <h3>Experiment Setup</h3>
+        <div class="step-by-step">
+            <li><strong>Materials Needed:</strong> Multimeter, various test materials (copper wire, aluminum foil, rubber, plastic, wood, glass, pencil lead, paperclip, coin, eraser), battery or power supply, connecting wires</li>
+            <li><strong>Circuit Assembly:</strong> Connect power supply to test circuit with material sample in series</li>
+            <li><strong>Measurement:</strong> Use multimeter to measure current flow through each material</li>
+            <li><strong>Recording:</strong> Document resistance values and classify materials</li>
+            <li><strong>Analysis:</strong> Compare results and relate to material properties</li>
+        </div>
+        
+        <h3>Expected Results</h3>
+        <table class="comparison-table">
+            <tr>
+                <th>Material</th>
+                <th>Expected Resistance</th>
+                <th>Classification</th>
+                <th>Use in PT Equipment</th>
+            </tr>
+            <tr>
+                <td>Copper Wire</td>
+                <td>Very Low</td>
+                <td>Excellent Conductor</td>
+                <td>Wiring, electrodes</td>
+            </tr>
+            <tr>
+                <td>Aluminum Foil</td>
+                <td>Low</td>
+                <td>Good Conductor</td>
+                <td>Heat sinks, shielding</td>
+            </tr>
+            <tr>
+                <td>Pencil Lead (Graphite)</td>
+                <td>Medium</td>
+                <td>Semiconductor</td>
+                <li>Specialized sensors</li>
+            </tr>
+            <tr>
+                <td>Paperclip (Steel)</td>
+                <td>Low</td>
+                <td>Good Conductor</td>
+                <td>Internal components</td>
+            </tr>
+            <tr>
+                <td>Coin (Various)</td>
+                <td>Low</td>
+                <td>Good Conductor</td>
+                <li>Contacts, switches</li>
+            </tr>
+            <tr>
+                <td>Wood</td>
+                <td>Very High</td>
+                <td>Insulator</td>
+                <td>Equipment bases</td>
+            </tr>
+            <tr>
+                <td>Rubber</td>
+                <td>Very High</td>
+                <td>Excellent Insulator</td>
+                <td>Casings, handles</td>
+            </tr>
+            <tr>
+                <td>Plastic</td>
+                <td>Very High</td>
+                <td>Excellent Insulator</td>
+                <td>Equipment casings</td>
+            </tr>
+            <tr>
+                <td>Glass</td>
+                <td>Very High</td>
+                <td>Excellent Insulator</td>
+                <td>Insulators, displays</td>
+            </tr>
+            <tr>
+                <td>Eraser</td>
+                <td>Very High</td>
+                <td>Excellent Insulator</td>
+                <li>Non-conductive parts</li>
+            </tr>
+        </table>
+        
+        <h3>Demonstration Procedure</h3>
+        <ol>
+            <li>Set up a simple circuit with a power supply, resistor, and test material</li>
+            <li>Measure the current flow through each material</li>
+            <li>Calculate resistance using Ohm's Law (R = V/I)</li>
+            <li>Classify each material as conductor, semiconductor, or insulator</li>
+            <li>Discuss why certain materials are used in specific equipment parts</li>
+        </ol>
+        
+        <div class="figure">
+            <img src="fig13.jpeg" alt="Circuit setup for testing conductivity of materials" style="max-width: 100%; height: auto;">
+            <p>Figure: Circuit setup for testing conductivity of materials</p>
+        </div>
+        
+        <div class="clinical-application">
+            <strong>Clinical Relevance:</strong><br>
+            Understanding conductivity helps explain:
+            <ul>
+                <li>Why electrodes are made of conductive materials (silver, carbon)</li>
+                <li>Why equipment casings are made of insulating materials (plastic, rubber)</li>
+                <li>How electrical current flows through tissues during stimulation</li>
+                <li>Why certain materials are used for patient contact surfaces</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Slide 15: Lab Report Guidelines -->
+    <div class="slide">
+        <div class="slide-number">15</div>
+        <h2>Lab Report Guidelines</h2>
+        <p>After completing the practical session, you will prepare a comprehensive lab report. A well-structured lab report demonstrates your understanding of the experiment and its relevance to physiotherapy practice.</p>
+        
+        <h3>Lab Report Structure</h3>
+        <ol>
+            <li><strong>Title Page</strong>
+                <ul>
+                    <li>Experiment title</li>
+                    <li>Your name and student ID</li>
+                    <li>Course name and number</li>
+                    <li>Instructor name</li>
+                    <li>Date of experiment</li>
+                </ul>
+            </li>
+            
+            <li><strong>Abstract/Summary</strong>
+                <ul>
+                    <li>Brief overview of the experiment (1-2 paragraphs)</li>
+                    <li>Main objectives and findings</li>
+                    <li>Key conclusions</li>
+                </ul>
+            </li>
+            
+            <li><strong>Introduction</strong>
+                <ul>
+                    <li>Background information and theory</li>
+                    <li>Relevance to physiotherapy</li>
+                    <li>Objectives of the experiment</li>
+                    <li>Hypothesis (if applicable)</li>
+                </ul>
+            </li>
+            
+            <li><strong>Materials and Methods</strong>
+                <ul>
+                    <li>List of equipment and materials used</li>
+                    <li>Step-by-step procedure followed</li>
+                    <li>Circuit diagrams or experimental setup</li>
+                    <li>Safety precautions taken</li>
+                </ul>
+            </li>
+            
+            <li><strong>Results</strong>
+                <ul>
+                    <li>Data collected (tables, graphs)</li>
+                    <li>Observations made during experiment</li>
+                    <li>Calculations performed</li>
+                    <li>Statistical analysis (if applicable)</li>
+                </ul>
+            </li>
+            
+            <li><strong>Discussion</strong>
+                <ul>
+                    <li>Interpretation of results</li>
+                    <li>Comparison with expected values</li>
+                    <li>Explanation of discrepancies</li>
+                    <li>Limitations of the experiment</li>
+                    <li>Sources of error</li>
+                </ul>
+            </li>
+            
+            <li><strong>Conclusion</strong>
+                <ul>
+                    <li>Summary of key findings</li>
+                    <li>Answers to objectives</li>
+                    <li>Implications for physiotherapy practice</li>
+                    <li>Suggestions for improvement</li>
+                </ul>
+            </li>
+            
+            <li><strong>References</strong>
+                <ul>
+                    <li>List of all sources cited</li>
+                    <li>Proper citation format (APA, MLA, etc.)</li>
+                </ul>
+            </li>
+            
+            <li><strong>Appendices</strong>
+                <ul>
+                    <li>Raw data sheets</li>
+                    <li>Additional calculations</li>
+                    <li>Supplementary figures or tables</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <h3>Writing Tips</h3>
+        <div class="key-point">
+            <strong>Effective Lab Report Writing:</strong>
+            <ul>
+                <li><strong>Be Clear and Concise:</strong> Use precise language and avoid unnecessary words</li>
+                <li><strong>Use Passive Voice:</strong> "The circuit was connected" rather than "I connected the circuit"</li>
+                <li><strong>Include Units:</strong> Always include units with measurements</li>
+                <li><strong>Label Figures and Tables:</strong> Number and title all visual elements</li>
+                <li><strong>Be Objective:</strong> Present facts and data without bias</li>
+                <li><strong>Proofread:</strong> Check for spelling, grammar, and formatting errors</li>
+            </ul>
+        </div>
+        
+        <h3>Common Mistakes to Avoid</h3>
+        <ul>
+            <li>Missing or incomplete sections</li>
+            <li>Inconsistent units or missing units</li>
+            <li>Poorly labeled figures and tables</li>
+            <li>Insufficient detail in methods</li>
+            <li>Superficial discussion without analysis</li>
+            <li>Failure to relate findings to physiotherapy</li>
+            <li>Plagiarism or improper citation</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Example: Results Section</strong><br>
+            <em>"The resistance measurements for various materials are shown in Table 1. Copper wire exhibited the lowest resistance (0.1 Ω), while rubber showed the highest resistance (>10 MΩ). These results confirm that copper is an excellent conductor suitable for electrical wiring in therapeutic equipment, while rubber serves as an effective insulator for equipment casings."</em>
+        </div>
+    </div>
+    
+    <!-- Slide 16: Summary and Key Takeaways -->
+    <div class="slide">
+        <div class="slide-number">16</div>
+        <h2>Summary and Key Takeaways</h2>
+        <p>Week 1 has introduced you to the fundamental concepts of atomic structure and electrical conduction that form the basis of medical physics in physiotherapy. Let's summarize the key points and their clinical relevance.</p>
+        
+        <h3>Core Concepts Covered</h3>
+        <ul>
+            <li><strong>Atomic Structure:</strong> Atoms consist of protons, neutrons, and electrons</li>
+            <li><strong>Electron Behavior:</strong> Electron movement is the basis of electrical current</li>
+            <li><strong>Conduction:</strong> Conductors allow electron flow, insulators resist it</li>
+            <li><strong>Convection:</strong> Heat transfer through fluid movement in hydrotherapy</li>
+            <li><strong>Electrical Safety:</strong> Essential for using therapeutic modalities safely</li>
+        </ul>
+        
+        <h3>Clinical Applications</h3>
+        <div class="clinical-application">
+            <strong>Physics in Physiotherapy Practice:</strong>
+            <ul>
+                <li><strong>Electrical Stimulation:</strong> Understanding current flow helps set appropriate parameters</li>
+                <li><strong>Equipment Safety:</strong> Knowledge of conductors and insulators prevents accidents</li>
+                <li><li>Thermal Modalities:</li> Convection principles enhance heat transfer in hydrotherapy</li>
+                <li><li>Equipment Maintenance:</li> Understanding basic physics aids in troubleshooting</li>
+                <li><li>Patient Education:</li> Ability to explain treatment mechanisms to patients</li>
+            </ul>
+        </div>
+        
+        <h3>Key Takeaways</h3>
+        <div class="key-point">
+            <strong>Essential Knowledge for DPT Students:</strong>
+            <ol>
+                <li>Atoms are the building blocks of matter, with electrons determining electrical properties</li>
+                <li>Electrical current is the flow of electrons, governed by Ohm's Law (V = I × R)</li>
+                <li>Materials are classified as conductors, insulators, or semiconductors based on electron behavior</li>
+                <li>Convection transfers heat through fluid movement, important in hydrotherapy</li>
+                <li>Safety is paramount when working with electrical equipment in clinical settings</li>
+                <li>Understanding physics principles enhances clinical decision-making and patient care</li>
+            </ol>
+        </div>
+        
+        <h3>Looking Ahead</h3>
+        <p>In Week 2, we will build on this foundation by exploring:</p>
+        <ul>
+            <li>Static electricity and its applications</li>
+            <li>Electrostatic fields and capacitors</li>
+            <li>Capacitor arrangements in therapeutic equipment</li>
+            <li>Practical experiments with static electricity</li>
+        </ul>
+        
+        <h3>Preparation for Next Week</h3>
+        <ul>
+            <li>Review the concepts of charge and electric fields</li>
+            <li>Read about capacitors and their applications</li>
+            <li>Think about examples of static electricity in daily life and clinical settings</li>
+            <li>Complete any assigned readings or exercises</li>
+        </ul>
+        
+        <div class="note-box">
+            <div class="note-box-title">Remember</div>
+            <p>Physics is not just a theoretical subject but a practical tool that enhances your effectiveness as a physiotherapist. The more you understand the underlying principles, the better you can apply therapeutic modalities safely and effectively.</p>
+        </div>
+    </div>
+
+</body>
+</html>
